@@ -1,0 +1,485 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook - log in or sign up</title>
+    <style>
+    .main_name{
+        
+display: inline-block;
+margin-top: 18px;  
+        width: 170px;
+        height: 55px;
+    }
+    .main_form{
+        float: right;
+        margin-top: 18px;  
+       
+        
+    }
+    thead{
+        display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    
+    }
+    input{
+        width: 150px;
+        height: 23px;
+    }
+    td{
+        font-size: 12px;
+    }
+    .header{
+        width: 100%;
+        height: 82px;
+    }
+    .headitems{
+        width: 980px !important;
+        height: 78px !important;
+    }
+    .header{
+        background-color: #48649F;
+    }
+    .login{
+        width: 50px;
+        height: 24px;
+        color: #fff;
+        
+background-color: #4668ac;;
+        border: 1px solid #4e5f81;
+        border-collapse: collapse;
+        border-radius: 2px;
+    
+    font-weight: bold;
+   
+    }
+    .jj{
+        width: 164;
+        padding-left: 10px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .main_name{
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+    td {
+       color: #FFFFFF; 
+    }
+    td a{
+        color: #9cb4d8;
+    }
+    td a:hover{
+        color: #9cb4d8;
+        text-decoration: underline;
+    }
+    .login:hover{
+        background-color: #365899;
+        cursor: pointer;
+    }
+    .body{
+        background:linear-gradient(#FBFCFD,#E3E7F1,#DBDFEC);
+    }
+    .body >div{
+        margin-top: 3%;
+        margin-left: 12%;
+        width: 400px;
+        height: 560px;
+        
+       
+    }
+    .bodyleft>  h5{
+        font-weight: bold;
+        color: #2c4066;
+        width: 450px;
+        
+    }
+    .bodyleft{
+        display: inline-block;
+    }
+    form{
+        width: 400px;
+        height: 560px;
+        float: right;
+        margin-right: 10%;
+        margin-top: 1.5%;
+        
+    }
+    .firstbox{
+width: 194px;
+height: 39px;
+font-size: 18px;
+    padding: 8px 10px;
+    border-color: #aec9f8;
+    border-radius: 5px;
+    margin: 0;
+    border-width: 0.04em;
+   
+    }
+    .secondbox{
+        width: 399px;
+        height: 39px;
+        font-size: 18px;
+    padding: 8px 10px;
+    border-color: #bdc7d8;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-width: 0.04em;
+    
+    }
+    .birth{
+        height: 30px;
+      
+        vertical-align: middle;
+    }
+    span .bir{
+        font-size: 10px;
+        width: 150px;
+        height: 30px;
+        display: inline-block;
+       margin-left: 10px;
+       vertical-align: middle;
+       color: #48649F;
+       
+        
+        
+    }
+    span{
+        font-size: 10px;
+        width: 150px;
+        height: 28px;
+    }
+    .gender{
+        width: 13px;
+        height: 13px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        
+    }
+   p {
+        font-size: 11px;
+        color: gray;
+    }
+    .lastb{
+        font-size: 19px;
+        font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+        font-weight: bold !important;
+        line-height: 126%;
+        min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+    background: linear-gradient(#67ae55, #578843);
+    
+    
+    border-color: green;
+    border: 0.3px solid;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    margin: 0;
+    width: 202px;
+    height: 39px;
+    }
+    .lastnote{
+        font-size: 14px;
+        color: gray;
+        font-weight: bold;
+    }
+    .lastnote >a{
+        color:#48649F;
+    }
+    p>a{
+        color: #48649F;
+    }
+    .lastb:hover{
+        filter: brightness(105%);
+    }
+    input::placeholder{
+        opacity: 0.7;
+        font-weight:450;
+    }
+    .gen{
+        font-weight:450;
+        font-size: 18px;
+    }
+    .footer{
+        background-color: #FFFFFF;
+      width:980px !important  ;
+    height: 139px !important  ;
+    margin-left: 0px;;
+    
+    }
+   
+     ul>li{
+        display: inline-block;
+        list-style-type: none;
+        margin-top: 3%;
+        font-size: 13px;
+        padding: 3px; 
+        
+    }
+   .footerul{
+    padding: 0;
+    list-style-type: none;
+   }
+
+.footerul .add{
+    font-size: 14px;
+        font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+        font-weight: bold !important;
+             display: table-cell;
+        vertical-align: middle;
+        line-height:1.2em;
+        cursor: pointer;
+     
+background-color: rgb(236, 238, 241);
+   
+    color: rgb(102, 96, 96);
+    
+    width: 30px;
+    height: 20px;
+
+   
+}
+input.add:hover{
+    filter: brightness(90%)
+}
+.footer a{
+    text-decoration: none;
+    color:#365899 !important;
+}
+.footer li{
+    color: gray;
+}
+.language {
+    width: 90%;
+    margin-top: 0;
+   
+}
+.language tr{
+   padding-left: 0;
+   margin-left: 0;
+}
+.endnote{
+    font-size: 11px;
+    color: gray;
+}
+    </style>
+    
+    <link rel="shortcut icon" href="if_facebook_1807546.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="headitems container">
+           <a href="#"><h1 class="main_name">facebook</h1></a> 
+            <table class="main_form" cellspacing="10">
+                <thead>
+                <tr>
+                    <td>Email or Phone</td>
+                    <td class="jj">Password</td>
+
+                </tr>
+                <tr>
+                    <td> <input type="text" name="username"> </td>
+                    <td class="jj"> <input type="password" name="password" > </td>
+                    <td> <input class="login" type="submit" value="Log In"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="jj"><a href="#">Forgotten account?</a></td>
+                </tr>
+               
+            </thead>
+            </table>
+
+
+        </div>
+    </div>
+    <div class="body">
+        <div class="bodyleft">  <h5>  Facebook helps you connect and share with the <br>
+               people in your life.
+            </h5>
+        <img src="connect.png" alt="">
+    </div>
+          
+        <form class="form-group"  action="#" method="post">
+                <h1>Create an account</h1>
+                <h5 >It's free and always will be.</h5>
+                <br>
+            <input class="firstbox " type="text" placeholder="First name">&nbsp;
+            <input class="firstbox" type="text" placeholder="Surname">
+
+            <input class="secondbox" type="text" placeholder="Mobile number or email address">
+            <input class="secondbox" type="password" placeholder="New password">  
+            <h5> <br> Birthday</h5>
+            <select class="birth">
+                    
+                    <option value="Day">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                                      </select>
+                <select class="birth" name="" id="">
+                        <option value="">Month</option>
+                        <option value="">January</option>
+                        <option value="">Febuary</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">August</option>
+                        <option value="">September</option>
+                        <option value="">October</option>
+                        <option value="">November</option>
+                        <option value="">December</option>
+                     
+
+                </select>
+                <select class="birth" name="" id="">
+                        <option value="">Year</option>
+                        <option value="">2018</option>
+                        <option value="">2017</option>
+                        <option value="">2016</option>
+                        <option value="">2015</option>
+                        <option value="">2014</option>
+                        <option value="">2013</option>
+                        <option value="">2012</option>
+                        <option value="">2011</option>
+                        <option value="">2010</option>
+                        <option value="">2009</option>
+                        <option value="">2008</option>
+                        <option value="">2007</option>
+                        <option value="">2006</option>
+                        <option value="">2005</option>
+                        <option value="">2004</option>
+                        <option value="">2003</option>
+                       <option value="">2002</option>
+                        <option value="">2001</option>
+                        <option value="">2000</option>
+                        <option value="">1999</option>
+                        <option value="">1998</option>
+                        <option value="">1997</option>
+                        <option value="">1996</option>
+                        <option value="">1995</option>
+                        <option value="">1994</option>
+                        <option value="">1993</option>
+                        
+                        <span class="span"><a href="#">Why do i need to provide my <br>date of birth?</a></span>  
+                     
+
+                </select><span><a class="bir" href="#">Why do i need to provide my <br>date of birth?</a></span> <br>
+                
+                <input class="gender" type="radio" name="gender" id=""><b class="gen">Female</b> 
+                <input class="gender" type="radio" name="gender" id=""><b class="gen">Male </b> <br>
+                <p>By clicking Create an account, you agree to our <a href="">Terms</a> Terms and  
+                        confirm that you have read our <a href="">Data Policy</a>, including our <a href="">Cookie Cookie Use Policy</a> 
+                        . You may receive SMS message notifications from Facebook and can opt out at any time</p> 
+                <input class="lastb" type="submit" value="Create an account"><br>
+<br><span class="lastnote"> <a href="#">Create a Page</a> for a celebrity, band or business.</span>
+        </form>
+      
+    </div>
+<div class="footer container">
+    <ul class="footerul">
+        <li>English (UK)</li>
+        <li><a href="#">اردو</a></li>
+        <li><a href="#">پښتو</a></li>
+        <li><a href="#">العربية</a></li>
+        <li><a href="#">हिन्दी</a></li>
+        <li><a href="#">বাংলা</a></li>
+        <li><a href="#">ਪੰਜਾਬੀ</a></li>
+        <li><a href="#">فارسی</a></li>
+        <li><a href="#">ગુજરાતી</a></li>
+        <li><a href="#">Deutsch</a></li>
+        <li><a href="#">Español</a></li>
+        <li><input class="add" type="button" value="+"></li>
+       
+    </ul>
+<hr>
+<table class="language">
+    <tr>
+        <td><a href="#">Sign Up</a></td>
+        <td><a href="#">Log In</a></td>
+        <td><a href="#">Messenger</a></td>
+        <td><a href="#">Facebook lite</a></td>
+        <td><a href="#">Mobile</a></td>
+        <td><a href="#">Find Friends</a></td>
+        <td><a href="#">People</a></td>
+        <td><a href="#">Pages</a></td>
+        <td><a href="#">Places</a></td>
+        <td><a href="#">Games</a></td>
+        <td><a href="#">Locations</a></td>
+
+    </tr>
+    <tr>
+        <td><a href="#">Celebrities</a></td>
+        <td><a href="#">Marketplace</a></td>
+        <td><a href="#">Groups</a></td>
+        <td><a href="#">Recipes</a></td>
+        <td><a href="#">Sports</a></td>
+        <td><a href="#">Look</a></td>
+        <td><a href="#">Moments</a></td>
+        <td><a href="#">Instagram</a></td>
+        <td><a href="#">local</a></td>
+        <td><a href="#">About</a></td>
+        <td><a href="#">Create ad</a></td>
+
+    </tr>
+    <tr>
+        <td><a href="#">Create Page</a></td>
+        <td><a href="#">Developers</a></td>
+        <td><a href="#">careers</a></td>
+        <td><a href="#">Privacy</a></td>
+        <td><a href="#">Cookies</a></td>
+        <td><a href="#">AdChoices <span><a href="#"><img src="211620-16.png" alt="asd"></a></span> </a></td>
+        <td><a href="#">Terms</a></td>
+        <td><a href="#">Help</a></td>
+        
+
+    </tr>
+</table> <br>
+<h6 class="endnote">Facebook&copy;2018</h6>
+</div>
+  
+</body>
+</html>
